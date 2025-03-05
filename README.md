@@ -7,6 +7,6 @@ Este é o meu portfólio desenvolvido em React.js, onde apresento meus projetos,
 
 React.js ⚛️
 JavaScript (ES6+)
-CSS/Tailwind
+CSS/Styled-Components
 React Router (para navegação)
 Vercel/Netlify (para deploy)
