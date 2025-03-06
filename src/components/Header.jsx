@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../assets/Logo.png"; 
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Logo>Portfólio</Logo>
+      <Logo src={logo} alt="Logo do Portfólio" />
       <Nav>
         <ul>
           <li>
@@ -27,10 +28,15 @@ const Header = () => {
 
 const HeaderWrapper = styled.header`
   background-color: var(--header);
-  padding: 3rem 6rem;
+  padding: 0rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+const Logo = styled.img`
+  height: 100px; 
+  width: auto;
 `;
 
 const Nav = styled.nav`
@@ -51,14 +57,17 @@ const Nav = styled.nav`
     margin-left: 80px;
   }
 
-  /* Remover o list-style e ajustar o espaçamento do último item */
   li:last-child {
     list-style: none;
-    margin-left: 40px; /* Reduzir o espaço para alinhar corretamente */
+    margin-left: 40px;
   }
 
   li:hover {
     color: #ccccccf3;
+  }
+
+  @media screen and (max-width: 728px) {
+
   }
 `;
 
@@ -75,12 +84,6 @@ const ContactButton = styled.a`
     background-color: var(--highlight-color);
     color: white;
   }
-`;
-
-const Logo = styled.div`
-  color: var(--highlight-color);
-  font-size: 24px;
-  font-weight: bold;
 `;
 
 export default Header;

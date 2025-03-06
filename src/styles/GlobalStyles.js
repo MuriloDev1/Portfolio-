@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     --secondary-background:rgba(6, 19, 47, 0.73);
     --font-family: 'Montserrat', sans-serif;
   }
-
+  
  * {
     margin: 0;
     padding: 0;

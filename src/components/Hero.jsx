@@ -34,13 +34,9 @@ const Hero = () => {
 
 const HeroContainer = styled.section`
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
   text-align: start;
   height: 85dvh;
-  margin: 0 6rem;
+  margin: 4rem 6rem;
 `;
 
 const Content = styled.div`
@@ -55,12 +51,12 @@ const Greeting = styled.p`
 `;
 
 const Title = styled.h1`
-  margin: 1rem 0;
+  margin: 0.8rem 0;
   font-size: 5rem;
 `;
 
 const Subtitle = styled.h2`
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   color: #a8a8a8f1;
 `;
@@ -90,6 +86,7 @@ const Button = styled.a`
 
 const SocialsContainer = styled.div`
   position: absolute;
+  top: 20%;
   right: 0;
   display: flex;
   flex-direction: column;
